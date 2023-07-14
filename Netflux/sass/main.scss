@@ -1,0 +1,40 @@
+
+
+
+
+@import "base/mixins";
+@import "base/variables";
+// @import "base/utilities";
+@import "base/typography";
+@import "base/base";
+@import "base/dark-mode";
+
+
+@import "components/buttons";
+// @import "components/cards";
+@import "components/slider";
+@import "components/review";
+@import "components/feature";
+@import "components/free";
+@import "components/top-categories";
+@import "components/all-categories";
+@import "components/pricing";
+@import "components/faq";
+@import "components/news";
+@import "components/ending";
+@import "components/movie-content";
+
+
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/error";
+@import "pages/detail-movie";
+@import "pages/login";
+@import "pages/register";
+
+
+
+
+

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <title>Film & Movie Streaming Landing Page (Community)</title>
+</head>
+
+<body  class="background">
+    <main class="bg-main">
+        <header class="header container flex">
+
+            <nav class="header__navigation flex">
+                <div>
+                    <img src="img/Luxi-Fashion-Logo.svg" alt="logo" class="header__logo">
+                </div>
+                <div>
+                    <ul class="header__list flex">
+                        <li><a href="http://127.0.0.1:5500/error-page.html" target="_blank">Promotions</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Top Categories</a></li>
+                        <li><a href="#">All Categories</a></li>
+                        <li><a href="http://127.0.0.1:5500/register.html">Pricing</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <div class="header__login-card flex">
+                <div>
+                    <a href="http://127.0.0.1:5500/login.html" class="header__login" target="_blank">Login</a>
+                </div>
+                <div>
+                    <a href="http://127.0.0.1:5500/register.html" target="_blank"><button
+                            class="header__btn btn">REGISTER</button></a>
+
+                </div>
+                <div>
+                    <a href="#"><svg class="header__icon icon-cog">
+                        <use xlink:href="css/sprite.svg#icon-cog"></use>
+                    </svg></a>
+                </div>
+            </div>
+
+            <div class="burger">
+                <a href="#" class="toggle-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                
+            </div>
+        </header>
+
+    
+        <section class="review container">
+            <div class="review__trailer flex">
+                <a href="#" class="review__play-link flex">
+                    <span>WATCH</span>
+                    <svg class="review__icon icon-play2">
+                        <use xlink:href="css/sprite.svg#icon-play2"></use>
+                    </svg>
+                    <span>TRAILER</span>
+                </a>
+            </div>
+            <div class="review__presentation">
+                <div class="review__caption">
+                    <p>Vivamus sit amet interdum elit</p>
+                    <h2>Mancing Mania <br> The Movie</h2>
+                </div>
+                <div class="review__time">
+                    <span>On the air 01 . 11 . 20</span>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="bg-primary">
+        <section class="slider container flex">
+            <div class="slider__arrow">
+                <!-- <a href="#"><img src="img/Prev.svg" alt="prev" class="slider__arrow--prev"></a>
+                    <a href="#"><img src="img/prev-dark.svg" alt="prev" class="slider__arrow--prev-dark"></a> -->
+                <a href="#">
+                    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="slider__arrow--prev">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.6388 48.2245C25.0069 47.8532 24.995 47.2662 24.6388 46.871L16.7537 37.9591H50.55C51.0725 37.9591 51.5 37.5279 51.5 37.0008C51.5 36.4738 51.0725 36.0426 50.55 36.0426H16.7537L24.6269 27.1307C24.9713 26.7234 25.0069 26.1605 24.6388 25.7891C24.2706 25.4178 23.6294 25.3939 23.285 25.7772C23.285 25.7772 13.88 36.1983 13.785 36.3181C13.69 36.4378 13.5 36.6535 13.5 37.0008C13.5 37.3482 13.69 37.5878 13.785 37.6836C13.88 37.7794 23.285 48.2245 23.285 48.2245C23.4631 48.4042 23.7125 48.5 23.9619 48.5C24.2113 48.5 24.4487 48.4042 24.6388 48.2245Z"
+                         />
+                </svg>
+                </a>
+
+                <a href="#">
+                    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="slider__arrow--next">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M50.3612 48.2245C49.9931 47.8532 50.005 47.2662 50.3612 46.871L58.2463 37.9591H24.45C23.9275 37.9591 23.5 37.5279 23.5 37.0008C23.5 36.4738 23.9275 36.0426 24.45 36.0426H58.2463L50.3731 27.1307C50.0287 26.7234 49.9931 26.1605 50.3612 25.7891C50.7294 25.4178 51.3706 25.3939 51.715 25.7772C51.715 25.7772 61.12 36.1983 61.215 36.3181C61.31 36.4378 61.5 36.6535 61.5 37.0008C61.5 37.3482 61.31 37.5878 61.215 37.6836C61.12 37.7794 51.715 48.2245 51.715 48.2245C51.5369 48.4042 51.2875 48.5 51.0381 48.5C50.7887 48.5 50.5513 48.4042 50.3612 48.2245Z"
+                         />
+                </svg>
+                </a>
+                <!-- <a href="#"><img src="img/Next.svg" alt="next" class="slider__arrow--next"></a>
+                    <a href="#"><img src="img/Next-dark.svg" alt="next" class="slider__arrow--next-dark"></a> -->
+
+
+                <!-- <a href="#"><svg class="slider__arrow--left icon-arrow-left2"><use xlink:href="css/sprite.svg#icon-arrow-left2"></use></svg></a>
+                        <a href="#"><svg class="slider__arrow--right icon-arrow-right2"><use xlink:href="css/sprite.svg#icon-arrow-right2"></use></svg></a> -->
+            </div>
+
+            <div class="slider__content">
+                <div class="slider__movie-caption"> <span>Vivamus sit amet</span></div>
+                <div class="slider__movie-name"><span>The Lorem Ipsum Dolor Sit</span></div>
+                <div class="slider__movie-rating flex">
+                    <div class="slider__star-icon flex">
+                        <svg class="slider__icon icon-star-full">
+                            <use xlink:href="css/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="slider__icon icon-star-full">
+                            <use xlink:href="css/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="slider__icon icon-star-full">
+                            <use xlink:href="css/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="slider__icon icon-star-full">
+                            <use xlink:href="css/sprite.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="slider__icon icon-star-full">
+                            <use xlink:href="css/sprite.svg#icon-star-full"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__rating-time flex">
+                        <span class="slider__rating-point">5.0</span>
+                        <span class="slider__duration">2h 13m</span>
+                    </div>
+                </div>
+                <div class="slider__movie-about">
+                    <span>
+                        Vestibulum faucibus eget erat eget pretium. Donec commodo convallis eget suscipit orci.
+                    </span>
+                </div>
+                <div class="slider__movie-link">
+                    <a href="http://127.0.0.1:5500/detail-movie.html" target="_blank" class="slider__trailer-link">Watch
+                        Trailer</a>
+                    <a href="http://127.0.0.1:5500/detail-movie.html" target="_blank" class="slider__full-link">watch
+                        full movie</a>
+
+                </div>
+
+            </div>
+
+            <div class="slider__picture">
+                <img src="img/thelorem.svg" alt="car" class="slider__img">
+
+            </div>
+        </section>
+
+        <section class="feature container flex">
+            <div class="feature__caption">
+                <h3 class="feature__caption--featured heading-primary">Featured</h3>
+                <h4 class="feature__caption--movie heading-secondary">Movies</h4>
+                <p>Cras convallis lacus <br> orci, tristique tincidunt <br> magna consequat in.</p>
+            </div>
+            <div class="feature__card flex">
+                <a href="#"><img src="img/thelorem.svg" alt="photo">
+                    <svg class="feature__icon-play icon-play2">
+                        <use xlink:href="css/sprite.svg#icon-play2"></use>
+                    </svg>
+                    <span class="feature__movie-name">Cras convallis lacus </span></a>
+                <span class="feature__caption-new">NEW</span>
+            </div>
+            <div class="feature__card flex">
+                <a href="#"><img src="img/thelorem.svg" alt="photo">
+                    <svg class="feature__icon-play icon-play2">
+                        <use xlink:href="css/sprite.svg#icon-play2"></use>
+                    </svg>
+                    <span class="feature__movie-name">Cras convallis lacus </span></a>
+                <span class="feature__caption-new">NEW</span>
+            </div>
+            <div class="feature__card flex">
+                <a href="#"><img src="img/thelorem.svg" alt="photo">
+                    <svg class="feature__icon-play icon-play2">
+                        <use xlink:href="css/sprite.svg#icon-play2"></use>
+                    </svg>
+                    <span class="feature__movie-name">Cras convallis lacus </span></a>
+                <span class="feature__caption-new">NEW</span>
+            </div>
+        </section>
+
+        <section class="free container flex">
+            <div class="free__card-rent flex">
+                <a href="#">FREE <br> Rent 3 Days</a>
+            </div>
+            <div class="free__card-movie flex">
+                <a href=""><img src="img/cofee.svg" alt="cofee" class="free__cofee"> FREE <br> Movies</a>
+            </div>
+            <div class="free__card-episode flex">
+                <a href="#">FREE <br> Up to 5 Episodes</a>
+            </div>
+        </section>
+
+        <section class="top-categories container">
+            <div class="top-categories__card top-categories__card--caption flex">
+                <h3 class="heading-primary">Top</h3>
+                <h4 class="heading-secondary">Categories</h4>
+            </div>
+
+            <div class="top-categories__card top-categories__card--yellow flex">
+                <div class="top-categories__awards-img">
+                    <img src="img/man-girl-shadow.svg" alt="photo">
+                </div>
+
+                <div class="top-categories__awards-content flex">
+                    <a href="#">Academy <br> Awards</a>
+                    <span class="top-categories__movie-quantity">2.4K Films</span>
+                </div>
+            </div>
+
+            <div class="top-categories__card top-categories__card--purple flex">
+                <div class="top-categories__animation-img">
+                    <img src="img/man-girl-shadow.svg" alt="photo">
+                </div>
+
+                <div class="top-categories__animation-content flex">
+                    <a href="#">Animations</a>
+                    <span class="top-categories__movie-quantity">2.4K Films</span>
+                </div>
+            </div>
+            <div class="top-categories__card top-categories__card--dark-blue flex">
+                <div class="top-categories__action-img">
+                    <img src="img/man-shadow.svg" alt="photo-man">
+                </div>
+
+                <div class="top-categories__action-content flex">
+                    <a href="#">Actions</a>
+                    <span class="top-categories__movie-quantity">2.4K Films</span>
+                    <button class="btn">Explore</button>
+                </div>
+            </div>
+            <div class="top-categories__card top-categories__card--red flex">
+                <div class="top-categories__heroes-img">
+                    <img src="img/girl-shadow.svg" alt="photo-girl">
+                </div>
+
+                <div class="top-categories__heroes-content flex">
+                    <a href="#">Super Heroes</a>
+                    <span class="top-categories__movie-quantity">2.4K Films</span>
+                    <button class="btn">Explore</button>
+                </div>
+            </div>
+            <div class="top-categories__card top-categories__card--blue flex">
+                <div class="top-categories__dram-img">
+                    <img src="img/man-girl-shadow.svg" alt="photo">
+                </div>
+
+                <div class="top-categories__dram-content flex">
+                    <a href="#">Romance Drama</a>
+                    <span class="top-categories__movie-quantity">2.4K Films</span>
+                </div>
+            </div>
+            <div class="top-categories__card top-categories__card--green flex">
+                <div class="top-categories__commedy-img">
+                    <img src="img/man-girl-shadow.svg" alt="photo">
+                </div>
+
+                <div class="top-categories__commedy-content flex">
+                    <a href="#">Commedy</a>
+                    <span class="top-categories__movie-quantity">2.4K Films</span>
+                </div>
+            </div>
+        </section>
+        </div>
+        <div class="bg-secondary">
+        <section class="all-categories container">
+            <div class="all-categories__heading flex">
+                <h3 class="heading-primary">All</h3>
+                <h4 class="heading-secondary">Categories</h4>
+            </div>
+
+            <div class="all-categories__slider flex">
+                <div>
+                    <a href="#">
+                        <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="all-categories__arrows flex">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.91438 16.8024C8.17594 16.536 8.1675 16.1149 7.91438 15.8313L2.31187 9.43805H26.325C26.6962 9.43805 27 9.12869 27 8.75059C27 8.3725 26.6962 8.06314 26.325 8.06314H2.31187L7.90594 1.66985C8.15062 1.37769 8.17594 0.973811 7.91438 0.707424C7.65281 0.441037 7.19719 0.423851 6.9525 0.698831C6.9525 0.698831 0.269999 8.17485 0.202499 8.26079C0.134999 8.34672 0 8.50139 0 8.75059C0 8.99979 0.134999 9.17166 0.202499 9.2404C0.269999 9.30915 6.9525 16.8024 6.9525 16.8024C7.07906 16.9313 7.25625 17 7.43344 17C7.61062 17 7.77938 16.9313 7.91438 16.8024V16.8024Z"
+                            fill-opacity="0.87" />
+                    </svg>
+
+                    </a>
+                </div>
+                <div class="all-categories__genre flex">
+                    <div class="all-categories__size">
+                        <a href="#" class="all-categories__link flex">
+                            <img src="img/heart-break.svg" class="all-categories__image" alt="heart">
+                            <img src="img/heart-dark.svg" class="all-categories__image-dark" alt="heart">
+                            <span>Romantic</span>
+                        </a>
+                    </div>
+                    <div class="all-categories__size">
+                        <a href="#" class="all-categories__link flex">
+                            <img src="img/planet.svg" class="all-categories__image" alt="planet">
+                            <img src="img/planet-dark.svg" class="all-categories__image-dark" alt="planet">
+                            <span>Sci - Fi</span>
+                        </a>
+                    </div>
+                    <div class="all-categories__size">
+                        <a href="#" class="all-categories__link flex">
+                            <img src="img/user.svg" class="all-categories__image" alt="user">
+                            <img src="img/user-dark.svg" class="all-categories__image-dark" alt="user">
+                            <span>Commedy</span>
+                        </a>
+                    </div>
+                    <div class="all-categories__size">
+                        <a href="#" class="all-categories__link flex">
+                            <img src="img/star.svg" class="all-categories__image" alt="star">
+                            <img src="img/star-dark.svg" class="all-categories__image-dark" alt="star">
+                            <span>super heroes</span>
+                        </a>
+                    </div>
+                    <div class="all-categories__size">
+                        <a href="#" class="all-categories__link flex">
+                            <img src="img/camera.svg" class="all-categories__image" alt="camera">
+                            <img src="img/camera-dark.svg" class="all-categories__image-dark" alt="camera">
+                            <span>Hollywood</span>
+                        </a>
+                    </div>
+                    <div class="all-categories__size">
+                        <a href="#" class="all-categories__link flex">
+                            <img src="img/lighting.svg" class="all-categories__image" alt="lighting">
+                            <img src="img/lighting-dark.svg" class="all-categories__image-dark" alt="lighting">
+                            <span>Actions</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div>
+                    <a href="#">
+                        <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="all-categories__arrows flex">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.5856 16.8024C19.3241 16.536 19.3325 16.1149 19.5856 15.8313L25.1881 9.43805H1.175C0.80375 9.43805 0.5 9.12869 0.5 8.75059C0.5 8.3725 0.80375 8.06314 1.175 8.06314H25.1881L19.5941 1.66985C19.3494 1.37769 19.3241 0.973811 19.5856 0.707424C19.8472 0.441037 20.3028 0.423851 20.5475 0.698831C20.5475 0.698831 27.23 8.17485 27.2975 8.26079C27.365 8.34672 27.5 8.50139 27.5 8.75059C27.5 8.99979 27.365 9.17166 27.2975 9.2404C27.23 9.30915 20.5475 16.8024 20.5475 16.8024C20.4209 16.9313 20.2438 17 20.0666 17C19.8894 17 19.7206 16.9313 19.5856 16.8024V16.8024Z"
+                            fill-opacity="0.87" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing  container flex">
+            <div class="pricing__heading flex">
+                <h3 class="heading-primary">Flexible</h3>
+                <h4 class="heading-secondary">Pricing and Plan</h4>
+            </div>
+            <div class="pricing__cards flex">
+                <div class="pricing__basic-card   flex">
+                    <div class="pricing__basic-headline flex">
+                        <h5>BASIC</h5>
+                        <h6>FREE</h6>
+                    </div>
+                    <div class="pricing__link flex">
+                        <span>Nam sollicitudin dignissim</span>
+                        <span>Cras convallis lacus</span>
+                        <span>Quisque ut metus</span>
+                    </div>
+                    <div class="pricing__text">
+                        <span> Interdum et malesuada fames ac ante ipsum primis in faucibus. </span>
+                    </div>
+                    <div class="pricing__button">
+                        <button class="pricing__btn blue btn">choose plan</button>
+                    </div>
+                </div>
+                <div class="pricing__card pricing__card-best-value">
+                    <div class="pricing__headline flex">
+                        <h5>BEST VALUE</h5>
+                        <h6><sup>$</sup>24</h6>
+                    </div>
+                    <div class="pricing__link flex">
+                        <span>Nam sollicitudin dignissim</span>
+                        <span>Cras convallis lacus</span>
+                        <span>Quisque ut metus</span>
+                        <span>Vivamus sit amet</span>
+                        <span>Cras convallis lacus orci</span>
+                    </div>
+                    <div class="pricing__text">
+                        <span> Interdum et malesuada fames ac ante ipsum primis in faucibus. </span>
+                    </div>
+                    <div class="pricing__button">
+                        <button class="pricing__btn pink btn">choose plan</button>
+                    </div>
+                </div>
+                <div class="pricing__card pricing__card-pro">
+                    <div class="pricing__headline flex">
+                        <h5>PRO</h5>
+                        <h6><sup>$</sup>24</h6>
+                    </div>
+                    <div class="pricing__link flex">
+                        <span>Nam sollicitudin dignissim</span>
+                        <span>Cras convallis lacus</span>
+                        <span>Quisque ut metus</span>
+                        <span>Vivamus sit amet</span>
+                        <span>Cras convallis lacus orci</span>
+                    </div>
+                    <div class="pricing__text">
+                        <span> Interdum et malesuada fames ac ante ipsum primis in faucibus. </span>
+                    </div>
+                    <div class="pricing__button">
+                        <button class="pricing__btn pink btn">choose plan</button>
+                    </div>
+                </div>
+                <div class="pricing__card">
+                    <div class="pricing__headline flex">
+                        <h5>PRO</h5>
+                        <h6><sup>$</sup>24</h6>
+                    </div>
+                    <div class="pricing__link flex">
+                        <span>Nam sollicitudin dignissim</span>
+                        <span>Cras convallis lacus</span>
+                        <span>Quisque ut metus</span>
+                        <span>Vivamus sit amet</span>
+                        <span>Cras convallis lacus orci</span>
+                    </div>
+                    <div class="pricing__text">
+                        <span> Interdum et malesuada fames ac ante ipsum primis in faucibus. </span>
+                    </div>
+                    <div class="pricing__button">
+                        <button class="pricing__btn pink btn">choose plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq container flex">
+            <div class="faq__left flex">
+                <div class="faq__heading flex">
+                    <h3 class="heading-primary">Frequently</h3>
+                    <h4 class="heading-secondary">Answered Questions</h4>
+                </div>
+                <div class="faq__left-text">
+                    <span>Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. </span>
+                </div>
+                <div class="faq__left-image">
+                    <img src="img/mobile-faq.svg" alt="faq">
+                </div>
+            </div>
+            <div class="faq__right">
+                <ul class="faq__right-list flex">
+                    <li>
+                        <span>Pellentesque ac bibendum tortor?</span>
+                        <svg class="faq__chevron-down icon icon-chevron-thin-down">
+                            <use xlink:href="css/sprite.svg#icon-chevron-thin-down"></use>
+                        </svg>
+                        <ul class="faq__list-answer flex">
+                            <li> Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </li>
+                        </ul>
+
+
+                    </li>
+                    <li>
+                        <span>In mi nulla, fringilla vestibulum?</span>
+                        <a href="#"><svg class="icon icon-chevron-thin-down">
+                                <use xlink:href="css/sprite.svg#icon-chevron-thin-down"></use>
+                            </svg></a>
+                        <ul class="faq__list-answer flex">
+                            <li> Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Quisque lacinia purus ut libero?</span>
+                        <a href="#"><svg class="icon icon-chevron-thin-down">
+                                <use xlink:href="css/sprite.svg#icon-chevron-thin-down"></use>
+                            </svg></a>
+                        <ul class="faq__list-answer flex">
+                            <li> Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Quisque ut metus sit amet augue?</span>
+                        <a href="#"><svg class="icon icon-chevron-thin-down">
+                                <use xlink:href="css/sprite.svg#icon-chevron-thin-down"></use>
+                            </svg></a>
+                        <ul class="faq__list-answer flex">
+                            <li> Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Pellentesque ac bibendum tortor?</span>
+                        <a href="#"><svg class="icon icon-chevron-thin-down">
+                                <use xlink:href="css/sprite.svg#icon-chevron-thin-down"></use>
+                            </svg></a>
+                        <ul class="faq__list-answer flex">
+                            <li> Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </div>
+        <div class="bg-footer"> 
+        <section class="news container flex">
+            <div class="news__left flex">
+                <div class="news__image">
+                    <img src="img/event-girl.svg" alt="photo">
+                </div>
+                <div class="news__content flex">
+                    <span class="news__caption">Event</span>
+                    <span class="news__text">Sed imperdiet enim ligula, vitae viverra justo eget felis
+                        bibendum.</span>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="news__right flex">
+                <div class="news__image">
+                    <img src="img/news-photo.svg" alt="photo">
+                </div>
+                <div class="news__content flex">
+                    <span class="news__caption">News</span>
+                    <span class="news__text">Sed imperdiet enim ligula, vitae viverra justo eget felis
+                        bibendum.</span>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </section>
+           
+        <section class="ending container flex">
+                <div class="ending__question">
+                    <h2>What are you waiting for?</h2>
+                </div>
+                <div class="ending__btn">
+                    <button class="btn">get started</button>
+                </div>
+         </section>
+
+         <footer class="footer container flex">
+                <div class="footer__logo flex">
+                    <div class="footer__logo-image">
+                        <img src="img/footer-logo.svg" alt="logo">
+                    </div>
+                    <div class="footer__logo-title">
+                        <p>Video</p>
+                    </div>
+                    <div class="footer__copyright">
+                        <span class="copyright">&copy; Luxi Theme 2020</span>
+                    </div>
+                </div>
+
+                <div class="footer__main flex">
+                    <div class="footer__main-menu flex">
+
+                        <h4>COMPANY</h4>
+                        <ul class="footer__list flex">
+                            <li><a href="#">Donec dignissim</a></li>
+                            <li><a href="#">Curabitur egestas</a></li>
+                            <li><a href="#">Nam posuere</a></li>
+                            <li><a href="#">Aenean facilisis</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer__main-menu flex">
+                        <h4>Services</h4>
+                        <ul class="footer__list flex">
+                            <li><a href="#">Donec dignissim</a></li>
+                            <li><a href="#">Curabitur egestas</a></li>
+                            <li><a href="#">Nam posuere</a></li>
+                            <li><a href="#">Aenean facilisis</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__main-menu flex">
+                        <h4>Legal</h4>
+                        <ul class="footer__list flex">
+                            <li><a href="#">Donec dignissim</a></li>
+                            <li><a href="#">Curabitur egestas</a></li>
+                            <li><a href="#">Nam posuere</a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div>
+                    <div class="footer__social flex">
+                        <a href="#">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="17.0653" cy="17.1137" rx="17.0653" ry="17.1137" fill="black"
+                                    fill-opacity="0.12" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.8097 13.0824V10.8184C18.8097 9.79633 19.0439 9.27936 20.6892 9.27936H22.7537V5.47632H19.3089C15.0876 5.47632 13.6949 7.34218 13.6949 10.5451V13.0824H10.9218V16.8854H13.6949V28.2946H18.8097V16.8854H22.2853L22.7537 13.0824H18.8097Z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="17.5784" cy="17.1137" rx="17.0653" ry="17.1137" fill="black"
+                                    fill-opacity="0.12" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.6871 9.1272H11.0143C10.2675 9.1272 9.61462 9.66642 9.61462 10.4068V24.1484C9.61462 24.893 10.2675 25.5563 11.0143 25.5563H24.6829C25.4339 25.5563 25.9972 24.8887 25.9972 24.1484V10.4068C26.0015 9.66642 25.4339 9.1272 24.6871 9.1272ZM14.6929 22.8217H12.3458V15.5037H14.6929V22.8217ZM13.6004 14.391H13.5833C12.8323 14.391 12.3458 13.8304 12.3458 13.1286C12.3458 12.4139 12.8451 11.8661 13.6132 11.8661C14.3813 11.8661 14.8507 12.4096 14.8678 13.1286C14.8678 13.8304 14.3813 14.391 13.6004 14.391ZM23.2704 22.8217H20.9233V18.8203C20.9233 17.8617 20.5819 17.207 19.7327 17.207C19.084 17.207 18.7 17.6478 18.5293 18.0757C18.4653 18.2298 18.4482 18.4395 18.4482 18.6534V22.8217H16.1011V15.5037H18.4482V16.5222C18.7896 16.0344 19.323 15.3325 20.5648 15.3325C22.1054 15.3325 23.2704 16.3511 23.2704 18.5465V22.8217Z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="17.0916" cy="17.1137" rx="17.0653" ry="17.1137" fill="black"
+                                    fill-opacity="0.12" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M26.4206 11.7704C25.7494 12.0633 25.0319 12.261 24.2759 12.3523C25.0474 11.8959 25.6414 11.1733 25.9191 10.3139C25.1978 10.736 24.3993 11.044 23.5469 11.2076C22.8641 10.4888 21.892 10.04 20.8197 10.04C18.756 10.04 17.0858 11.6906 17.0858 13.7252C17.0858 14.0142 17.1166 14.2956 17.1822 14.5657C14.077 14.4135 11.3228 12.9456 9.48287 10.7132C9.16271 11.257 8.97755 11.8921 8.97755 12.5653C8.97755 13.8431 9.64102 14.9726 10.6439 15.6343C10.0268 15.6191 9.44815 15.4518 8.94669 15.1741C8.94669 15.1894 8.94669 15.2046 8.94669 15.2198C8.94669 17.0072 10.2351 18.4942 11.9439 18.8327C11.6314 18.9163 11.2997 18.962 10.9602 18.962C10.7211 18.962 10.4858 18.9392 10.2582 18.8935C10.7327 20.3577 12.1136 21.4225 13.7491 21.453C12.4723 22.4418 10.86 23.0312 9.1087 23.0312C8.80783 23.0312 8.51081 23.0122 8.21765 22.978C9.86475 24.0352 11.8282 24.6437 13.9343 24.6437C20.812 24.6437 24.5691 19.0266 24.5691 14.1549C24.5691 13.9952 24.5652 13.8355 24.5575 13.6795C25.2865 13.1585 25.9191 12.512 26.4206 11.7704Z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="17.6047" cy="17.1137" rx="17.0653" ry="17.1137" fill="black"
+                                    fill-opacity="0.12" />
+                                <ellipse cx="17.6047" cy="17.342" rx="3.18551" ry="3.19455" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.7627 13.9995C15.5878 13.172 16.6849 12.7114 17.8518 12.7114C19.0187 12.7114 20.1158 13.1745 20.9409 14.0019C21.4644 14.527 21.8385 15.1579 22.0421 15.862H25.3215V11.4418C25.3215 10.4048 24.5223 9.60327 23.4882 9.60327H12.2544C11.2203 9.60327 10.3431 10.4048 10.3431 11.4418V15.862H13.6614C13.8651 15.1579 14.2391 14.5245 14.7627 13.9995ZM24.0733 12.8578C24.0733 13.1343 23.8498 13.3585 23.574 13.3585H22.0762C21.8004 13.3585 21.5769 13.1344 21.5769 12.8578V11.3557C21.5769 11.0792 21.8004 10.855 22.0762 10.855H23.574C23.8498 10.855 24.0733 11.0792 24.0733 11.3557V12.8578Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.9409 20.1954C20.1158 21.0228 19.0187 21.4737 17.8518 21.4737C16.6849 21.4737 15.5878 21.0253 14.7627 20.1978C13.9391 19.3719 13.4849 18.2482 13.4832 17.1138H10.3431V22.7075C10.3431 23.7445 11.2203 24.6242 12.2544 24.6242H23.4882C24.5223 24.6242 25.3215 23.7445 25.3215 22.7075V17.1138H22.2204C22.2187 18.2482 21.7646 19.3694 20.9409 20.1954Z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                    <!-- <div>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.87412 0C3.97304 0 0 3.98436 0 8.8993C0 13.8142 3.97304 17.7986 8.87412 17.7986C13.7751 17.7986 17.7482 13.8142 17.7482 8.8993C17.7482 3.98436 13.7751 0 8.87412 0ZM7.95475 16.4722C6.27106 16.27 4.71322 15.5142 3.49555 14.2931C2.05888 12.8523 1.26772 10.9368 1.26772 8.8993C1.26772 7.0651 1.90922 5.32999 3.08525 3.95082C3.11554 4.31522 3.19033 4.70589 3.17117 4.98515C3.10121 6.00322 3.00103 6.64037 3.59525 7.49928C3.82675 7.83382 3.88362 8.3134 3.9963 8.7006C4.1065 9.07942 4.54675 9.27812 4.85039 9.51151C5.463 9.98253 6.04908 10.53 6.69868 10.9446C7.12741 11.2182 7.39521 11.3543 7.26965 11.8789C7.16867 12.3009 7.14046 12.5608 6.92279 12.9367C6.85637 13.0514 7.17353 13.7889 7.27908 13.8948C7.59897 14.2155 7.9164 14.5098 8.26509 14.7986C8.80568 15.2465 8.21257 15.8285 7.95475 16.4722ZM14.2526 14.2931C13.159 15.3898 11.791 16.1109 10.3038 16.393C10.5146 15.8704 10.8899 15.406 11.238 15.1368C11.5407 14.9025 11.92 14.4518 12.0781 14.0949C12.2362 13.7384 12.4455 13.4293 12.6574 13.1015C12.9588 12.6352 11.9142 11.9319 11.5757 11.7846C10.814 11.4529 10.2406 11.0054 9.56365 10.5277C9.08134 10.1874 8.10211 10.7055 7.55759 10.4671C6.81178 10.1405 6.19733 9.57308 5.54905 9.08349C4.88008 8.57824 4.91242 7.98922 4.91242 7.24386C5.43642 7.26324 6.18185 7.09843 6.52973 7.52102C6.6395 7.65438 7.01695 8.25016 7.26961 8.03846C7.47602 7.86548 7.11666 7.17211 7.04724 7.0091C6.83371 6.50787 7.53378 6.31238 7.89212 5.9725C8.35972 5.52907 9.36275 4.83365 9.28348 4.51579C9.20421 4.19794 8.27985 3.2974 7.73695 3.43791C7.65559 3.45896 6.93926 4.21219 6.80086 4.33036C6.80453 4.08452 6.8082 3.83872 6.81195 3.59288C6.8143 3.43765 6.5232 3.27832 6.53673 3.1782C6.57086 2.92517 7.27319 2.46596 7.4479 2.26444C7.3255 2.18773 6.90782 1.82795 6.7814 1.88075C6.47533 2.00867 6.12967 2.09681 5.8236 2.2247C5.8236 2.11825 5.81071 2.01826 5.79535 1.91951C6.40869 1.64718 7.05765 1.45782 7.72846 1.3568L8.32934 1.59896L8.75359 2.10387L9.17699 2.54169L9.5471 2.66128L10.135 2.10528L9.98338 1.70837V1.35158C11.146 1.52092 12.2439 1.95588 13.2055 2.62658C13.0334 2.64202 12.8444 2.66739 12.6311 2.6946C12.543 2.64241 12.43 2.6187 12.334 2.58238C12.6126 3.18317 12.9032 3.77566 13.1985 4.36849C13.5139 5.00175 14.2136 5.681 14.3365 6.34948C14.4813 7.13741 14.3808 7.85312 14.46 8.78014C14.5363 9.67285 15.4637 10.6872 15.4637 10.6872C15.4637 10.6872 15.8919 10.8334 16.248 10.7825C15.916 12.0995 15.2355 13.3074 14.2526 14.2931Z"
+                                fill="#304FFE" />
+                        </svg>
+                        <span>English - En</span>
+                        <svg class="icon icon-chevron-small-down">
+                            <use xlink:href="css/sprite.svg#icon-chevron-small-down"></use>
+                        </svg>
+                    </div> -->
+                </div>
+         </footer>
+         </div>
+        
+
+    </main>
+</body>
+
+</html>

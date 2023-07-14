@@ -1,0 +1,145 @@
+.footer {
+    margin-top: 8rem;
+    padding-bottom: 8rem;
+    gap: 8.3rem;
+    // background: $color-primary-light;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+        flex-wrap: wrap;
+    }
+    
+
+    &__logo {
+        flex-direction: column;
+        align-items: center;
+
+        @include respond(tab-port) {
+            order: 1;
+        }
+    }
+
+   
+
+    &__logo-title {
+
+        p {
+            @include bold-text;
+            text-align: center;
+            color: #FFFFFF;
+
+            @include respond(tab-land) {
+                color: var(--color-text-primary);
+            }
+
+        }
+
+    }
+    &__copyright {
+        margin-top: 1.6rem;
+        span {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: #FFFFFF;
+        @include respond(tab-land) {
+            color: var(--color-text-primary);
+        }
+        
+        }
+    }
+
+    &__main {
+        gap: 6.4rem;
+
+        @include respond(phone) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
+
+    &__main-menu {
+        flex-direction: column;
+        
+        h4 {
+            @include bold-text;
+            text-transform: uppercase;
+            color: var(--color-text-primary);
+        }
+    }
+
+    &__list {
+        flex-direction: column;
+        margin-top: 1.6rem;
+        gap: 1.8rem;
+
+        li {
+           a {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                color:var(--color-text-primary);
+            }
+         }
+    }
+
+    &__social {
+        gap: 1.7rem;
+
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include respond(tab-port) {
+            flex-direction: row;
+            
+        }
+
+        svg {
+            fill: var(--color-social-icon);
+        }
+    }
+}
+
+
+
+
+//footer-error-page 
+
+.footer-secondary {
+
+    .footer__logo-title {
+        p {
+            color: var(--color-text-primary);
+        }
+    }
+    .footer__copyright {
+
+        span {
+        color: var(--color-text-primary);
+        }
+    }
+}
+
+
+.bg-footer {
+    background-image: url(../img/footer-bg-light.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 100%;
+
+    @include respond(tab-land) {
+        background: none;
+    }
+}
+
+.dark-mode {
+
+    .bg-footer {
+        background-image: url(../img/footer-dark.svg);
+    }
+}

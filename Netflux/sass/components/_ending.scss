@@ -1,0 +1,35 @@
+.ending {
+    margin-top: 39.3rem;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    // justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+        margin-top: 20rem;
+        
+    }
+
+    &__question {
+
+        h2 {
+            font-weight: 700;
+            font-size: 3.6rem;
+            line-height: 4.4rem;
+            text-align: center;
+            color: var(--color-text-primary);
+        }
+    }
+
+    &__btn {
+        button {
+            @include default-text;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: #304ffe;
+            padding: 0.8rem 1.55rem;
+        }
+    }
+}

@@ -1,0 +1,206 @@
+.free {
+    gap: 1rem;
+    margin-top: 5.5rem;
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include respond(phone) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+
+    &__card-rent {
+        background-image: linear-gradient(to top, 
+        rgba(233, 30, 99, 0.5) 19%,
+        rgba(48, 79, 254, 0.5) 86.85%), 
+        url(/img/Popcorn.svg);
+        width: 25%;
+        // height: 35rem;
+        align-items: flex-end;
+        justify-content: center;
+        border-radius: 2rem;
+        background-size: cover;
+
+        @include respond(tab-land) {
+
+            background-position: center;
+        }
+
+        @include respond(tab-port) {
+            width: 49%;  
+            // background-size: contain;
+            background-position: center;   
+            
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            height: 37rem;
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 2.9rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding-right: 3rem;
+            padding-bottom: 3rem;
+
+            @include respond(tab-land) {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                padding-right: 2rem;
+            }
+
+            @include respond(tab-port) {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+            
+            }
+        }
+
+    }
+
+
+    &__card-movie {
+        width: 50%;
+        height: 35rem;   
+        background-image: linear-gradient(to bottom, rgba(49, 7, 175, 0.718) 19%, 
+        rgba(42, 16, 128, 0.289) 86.85%), url(/img/movie-watching.svg) ;
+        border-radius: 2rem;
+        background-size: cover;
+        justify-content: flex-end;
+        align-items: flex-end;
+        // bottom: 7rem;
+         
+        // @include respond(tab-land) {
+        //     background-position: center;
+        // }
+        @include respond(tab-port) {
+            display: flex;
+            order: 1;
+            width: 100%;
+            // height: 30rem;   
+        }
+
+        @include respond(phone) {
+            order: 1;
+            width: 100%;
+            // background-position: center;
+        }
+        
+
+
+
+        a {
+            font-size: 6rem;
+            font-weight: 700;
+            line-height: 7rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            // text-align: center;
+            padding-right: 3rem;
+            padding-bottom: 3rem;
+            
+            @include respond(tab-land) {
+                font-size: 5rem;
+                line-height: 5rem;
+                padding-right: 2rem;
+            }
+
+            @include respond(tab-port) {
+                font-size: 4rem;
+                line-height: 5rem;
+                padding-right: 4rem;
+            }
+            @include respond(phone) {
+                font-size: 3rem;
+                line-height: 4rem;
+                // padding-right: 4rem;
+            }
+            
+
+        }
+
+
+    }
+
+    &__cofee {
+
+        @include respond(tab-port) {
+            width: 4.5rem;
+            height: 4.5rem;
+            
+        
+        }
+    }
+
+    &__card-episode{
+       width: 25%;
+       height: 35rem;
+       background-image: linear-gradient(to top, 
+       rgba(233, 30, 99, 0.5) 19%,
+       rgba(48, 79, 254, 0.5) 86.85%),  url(/img/dance-girl.svg);
+       justify-content: center;
+       align-items: flex-end;
+       border-radius: 2rem;
+       background-size: cover;
+
+       @include respond(tab-land) {
+        background-position: center;
+        
+    }
+
+    @include respond(tab-port) {
+          width: 49%;  
+        //   background-size: contain;
+          background-position: center;
+            
+    }
+
+       @include respond(phone) {
+        width: 100%;
+        height: 37rem;
+    }
+
+
+
+        
+            a {
+                font-weight: 700;
+                font-size: 2.4rem;
+                line-height: 2.9rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffff;
+                padding-right: 3rem;
+                padding-bottom: 3rem;
+
+                @include respond(tab-land) {
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    padding-right: 2rem;
+                }
+    
+                @include respond(tab-port) {
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                
+                }   
+
+                
+            }
+        
+    }
+
+
+}
+

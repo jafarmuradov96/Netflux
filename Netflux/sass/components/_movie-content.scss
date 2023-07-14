@@ -1,0 +1,107 @@
+.movie-content {
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+    background: var(--color-paper-light);
+    box-shadow: 0 0.3rem 2rem 0.5rem rgba(0, 0, 0, 0.059);
+    border-radius: 3rem;
+    max-width: 93.8rem;
+    height: auto;
+    padding: 6.6rem 3.3rem;
+    gap: 9rem;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tab-port) {
+        max-width: 80rem;
+    }
+
+    @include respond(phone) {
+        // max-width: 60rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__left {
+        flex-direction: column;
+        gap: 3.7rem;
+    }
+    &__left-caption {
+        flex-direction: column;
+        gap: 2rem;
+
+        h4 {
+            font-weight: 700;
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+            color: var(--color-heading-primary);
+        }
+        p {
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            color: var(--color-text-primary);
+        }
+    }
+    &__left-link {
+        gap: 3.2rem;
+
+        @include respond(tab-port) {
+            gap: 1rem;
+        }
+        @include respond(phone) {
+            gap: 0.6rem;
+        }
+
+    }
+
+    &__transition {
+        gap: 0.8rem;
+        
+        
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            svg {
+                fill: var(--color-secondary);
+            }
+            span {
+                @include bold-text;
+                text-transform: uppercase;
+                color: var(--color-secondary);
+
+                @include respond(tab-port) {
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+       
+    }
+
+    &__right {
+        flex-direction: column;
+        gap: 4.7rem;
+    }
+
+    &__crew {
+        flex-direction: column;
+        gap: 0.8rem;
+        h3 {
+            @include bold-text;
+            text-transform: uppercase;
+            color: var(--color-text-primary);
+        }
+        p {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: var(--color-text-primary);
+        }
+    }
+
+
+
+}

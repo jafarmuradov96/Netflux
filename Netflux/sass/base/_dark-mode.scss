@@ -1,0 +1,467 @@
+
+
+
+
+
+
+
+
+// .dark-mode {
+//     background-color: $default-dark;
+
+//     .background {
+//       background-color: $default-dark;
+//       background-image: url(../img/video.svg), url(../img/bg-1dark.svg), url(../img/bg-2dark.svg), url(../img/footer-bg-dark.svg);
+//       background-position: 0 0, 0 115rem, 0 337rem, 0 542rem;
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//     }
+       
+//     .slider {
+//       background-color: $color-secondary-dark;
+
+//       span {
+//           color:$color-white;
+//       }
+//       a {
+//           color: $color-secondary-light;
+//       }
+
+//       &__trailer-link {
+//         &:hover {
+//           color: $color-white;
+//         }
+//       }
+//       &__full-link {
+//         &:hover {
+//           color: $color-white;
+//         }
+//       }
+
+//       &__arrow--prev {
+//         display: none;
+//       }
+
+//       &__arrow--prev-dark {
+//         display: inline-block;
+//             position: absolute;
+//             top: 45%;
+//             z-index: -1;
+//             transform: translateX(-50%); 
+//             left: 0;
+//       }
+
+//       &__arrow--next{
+//         display: none;
+//       }
+
+//       &__arrow--next-dark {
+//         display: inline-block;
+//         position: absolute;
+//           top: 45%;
+//           z-index: -1;
+//           transform: translateX(50%);
+//           right: 0;
+//       }
+
+//     }
+
+//     &__arrow--next-dark {
+//       display: inline-block;
+//           position: absolute;
+//           top: 45%;
+//           z-index: -1;
+//           transform: translateX(-50%); 
+//           left: 0;
+//     }
+    
+
+//     .heading-primary {
+//       color: $color-white;
+//     }
+
+//     .heading-secondary {
+//       color: $color-secondary-light;
+//     }
+
+//     .feature {
+
+//       p {
+//         color: $color-white;}
+
+//       &__card {
+//         background-color: $paper-dark;
+        
+//       }
+//       &__movie-name {
+//         color: $color-white;
+//       }
+//     }
+
+//     .all-categories {
+
+//       &__arrows {
+//          background: $paper-dark;
+//          fill: $color-white;
+//       }
+
+//       &__link {
+//          span {
+//           color: $color-white;
+//          }
+//       }
+
+//       &__image {
+//         display: none;
+
+//       }
+
+//       &__image-dark {
+//         display: inline-block;
+//         border: 2px solid blueviolet;
+//         border-radius: 1.2rem;
+//         padding: 0.5rem 1.3rem;
+//         width: 10rem;
+//         height: 10rem;
+//         background: $paper-dark;
+
+//       }
+
+//     }
+
+//     .pricing {
+
+//       &__basic-card {
+//         background-color: $paper-dark;
+//         border: $paper-dark;
+//       }
+
+//       &__basic-headline {
+        
+//         h5 {
+//           color: $color-secondary-light;
+//         }
+//         h6 {
+//           color: $color-white;
+//         }
+//       }
+
+//       &__text {
+//         span {
+//         color: $text-thirthdy;
+//         }
+//       }
+//       &__card {
+//         background-color: $paper-dark;
+//         border: $paper-dark;
+//       }
+//       &__headline {
+
+//         h5 {
+//           color: $color-primary-light;
+//         }
+
+//         h6 {
+//           color: $color-white;
+//         }
+//       }
+
+//       &__link {
+
+//         span {
+//           color: $color-white;
+
+//           &:not(:last-child):after {
+//             border-bottom: 2px dashed $color-dashed-dark;
+//           }
+//         }
+//       }
+//     }
+
+//     .faq {
+
+//       &__left-text {
+
+//         span {
+//           color: $color-white;
+//         }
+//       }
+
+//       &__right-list {
+
+//         li {
+//           background-color: $paper-dark;
+
+//           &:hover .faq__list-answer li {
+//             color: $color-white;
+//             background-color: $paper-dark;        
+//         }
+
+//           &:hover span {
+//             color: $color-white;
+//           }
+
+//           span {
+//             color: $color-white;
+//           }
+//           svg {
+//             fill: $color-primary-light;
+//           }
+//         }
+//       }
+//     }
+//     .news {
+
+//       &__caption {
+//         color: $text-thirthdy;
+//       }
+//       &__text {
+//         color: $color-white;
+//       }
+//       a {
+//         color: $color-secondary-light;
+//       }
+//     }
+
+//     .ending__question  {
+
+//       h2 {
+//         color: $color-white;
+//       }
+//     }
+
+//     .footer {
+//       // background-color: $color-primary;
+//       &__list {
+
+//         li {
+
+//           a{
+//             color: $color-white;
+//           }
+//         }
+//       }
+
+      
+//       &__main-menu {
+
+//         h4 {
+//           color: $color-white;
+//         }
+//       }
+
+//       &__social {
+//         svg {
+//           fill: $color-white;
+//         }
+//       }
+//     }
+    
+    
+//     //ERROR-PAGE
+
+//     .header-secondary {
+
+//       ul {
+//           li {
+//               a {
+//                   color: $color-white;
+  
+//                   &:hover {
+//                       color: $color-white;
+//                   }
+//               }
+//           }
+//       }
+//       .header__login {
+//           color: $color-white;
+//           border-right: 1px solid $color-grey-1;
+//       }
+  
+//       .header__icon {
+//           fill: $text-thirthdy;
+//       }
+  
+//     } 
+
+//     .error {
+
+//       &__info {
+//         button {
+//           background-color: $default-dark;
+//         }
+//       }
+
+//       &__info-caption {
+//           color: $color-white;
+//       }
+//       &__info-text {
+//         color: $color-white;
+//       }
+//     }
+
+
+//     .footer-secondary {
+
+      
+//       .footer__logo-title {
+//           p {
+//               color: $color-white;
+//           }
+//       }
+//       .footer__copyright {
+//         span {
+//           color: $color-white;
+//         }
+          
+//       }
+      
+      
+      
+//   }
+  
+//   .detail-movie-bg {
+      
+    
+    
+//     &::after {
+//       background: $color-primary-dark;
+        
+        
+//     }
+// }
+  
+
+
+// .detail-movie {
+//     background: none;
+    
+//   }
+
+//   .movie-content {
+//        background: $paper-dark;
+     
+
+//      &__left-caption {
+//       h4 {
+//         color: $color-white;
+//       }
+//       p {
+//         color: $color-white;
+//       }
+//      }
+//      &__transition {
+//       a {
+//         svg{
+//           fill: $color-secondary-light;
+//         }
+//         span {
+//           color: $color-secondary-light;
+//         }
+//       }
+//      }
+
+//      &__crew {
+//       h3 {
+//         color: $color-white;
+//       }
+//       p {
+//         color: $color-white;
+//       }
+//      }
+//     }
+
+
+
+
+//       //site-login-register
+//     .site {
+
+//       &__right {
+//         background-color: $paper-dark;
+//       }
+//       &__title {
+
+//         h3 {
+//           color: $color-white;
+//         }
+//       }
+
+//       &__link {
+
+//         a {
+
+//           svg {
+//             fill: $color-secondary-light;
+//           }
+//           span {
+//             color: $color-secondary-light;
+//           }
+//         }
+//       }
+
+//       &__or {
+
+//         span {
+//           color: $text-thirthdy;
+
+//           &::before {
+//             background: $text-thirthdy;
+//           }
+//           &::after {
+//             background: $text-thirthdy;
+//           }
+//         }
+//       }
+
+//       &__input-form {
+
+//         input {
+//         background-color: $paper-dark;
+//         border: 1px solid $color-fourth;
+
+//         &::placeholder {
+//           color: $text-thirthdy;
+//         }
+//         }
+//       }
+
+//       &__input-checkbox {
+
+        
+//         span {
+//           color: $color-white;
+//         }
+//         a {
+//           color: $color-secondary-light;
+//         }
+//       }
+    
+    
+//     &__password {
+
+//       input {
+//         background-color: $paper-dark;
+//         border: 1px solid $color-fourth;
+
+//         &::placeholder {
+//           color: $text-thirthdy;
+//         }
+//       }
+//     }
+
+//     &__checkbox-item {
+
+//       span {
+//         color: $color-white;
+//         a {
+//           color: $color-secondary-light;
+//         }
+//       }
+//     }
+//   }
+
+
+
+
+// }

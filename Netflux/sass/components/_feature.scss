@@ -1,0 +1,149 @@
+.feature {
+    margin-top: 12rem;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4.5rem;
+
+    @include respond(tab-land) {
+        gap: 3rem;
+        width: 93%;
+    }
+    @include respond(tab-port) {
+            align-items: center;
+    }
+    @include respond(phone) {
+        // width: 90%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+    
+    &__caption {
+        padding-top: 3rem;
+        width: 25%;
+
+        @include respond(tab-port) {
+            // padding: 0;
+        }
+        @include respond(phone) {
+            width: 45%;
+            // padding: 2rem;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 2.2rem;
+            line-height: 3.3rem;
+            color: var(--color-text-primary);
+            padding-top: 2.5rem;
+
+            // @include respond(tab-port) {
+            //     font-size: 1.5rem;
+            //     line-height: 2.5rem;
+            // }
+
+            @include respond(phone) {
+                font-size: 1.4rem;
+                line-height: 2.1rem;
+            }
+        }
+    }
+
+    &__card {
+        flex-direction: column;
+        text-align: center;
+        // width: 26.3rem;
+        width: 25%;
+        height: auto;
+        // height: 42.2rem;
+        position: relative;
+        background-color: var(--color-paper-light);
+        border: 1px solid rgba(0, 0, 0, 0.122);
+        border-radius: 2.5rem;
+
+        @include respond(phone) {
+            width: 45%;
+        }
+
+        &:hover {
+            transition: all 0.3s;
+
+            .feature__icon-play {
+                display: block;
+            }
+        }
+        
+        a {
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+            padding-bottom: 1.4rem;
+
+            @include respond(tab-port) {
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+
+        }
+            
+        img {
+            width: 100%;
+        }
+
+      
+
+    }
+    &__icon-play {
+        position: absolute;
+        fill: #FFFFFF;
+        width: 6.9rem;
+        height:6.3rem;
+        top: 40%;
+        left: 38%;
+        display: none;
+
+        @include respond(tab-port) {
+            width: 5rem;
+            height: 5.3rem
+        }
+        @include respond(phone) {
+            width: 4rem;
+            height: 5rem;
+        }
+    }
+
+    &__movie-name {
+            @include bold-text;
+            text-align: center;
+            color: var(--color-text-primary);
+
+            @include respond(tab-port) {
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+            }
+    }
+
+    &__caption-new {
+            @include standart-size;
+            line-height: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: rgba(0, 0, 0, 0.87);
+            top: 1.7rem;
+            position: absolute;
+            border-radius: 3.1rem;
+            left: 2rem;
+            padding: 0.6rem 1.2rem;
+
+            @include respond(tab-port) {
+                font-size: 1.2rem;
+                padding: 0.4rem 0.8rem;
+            }
+    }
+    
+
+
+}

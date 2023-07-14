@@ -1,0 +1,410 @@
+.top-categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 18.5rem);
+    margin-top: 9.3rem;
+    row-gap: 2.4rem;
+    column-gap: 2.5rem;
+
+    @include respond(tab-land) {
+        column-gap: 1.5rem;
+        row-gap: 1.4rem;
+    }
+
+    @include respond(tab-port) {
+        grid-template-rows: repeat(8, 18.5rem);
+    }
+    @include respond(phone) {
+        grid-template-rows: repeat(10, 16rem);
+    }
+
+    &__card {
+
+        &--caption {
+            flex-direction: column;
+            justify-content: center;
+            grid-row: 1 / 2;
+            grid-column: 1/ 3;
+            border-radius: 2rem;
+
+            @include respond(tab-port) {
+                grid-row: 1 / 2;
+                grid-column: 1 / 5;
+                align-items: center;
+            }
+        }
+
+        &--yellow {
+            
+            background-color: #E79A1C;
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+            border-radius: 2rem;
+            position: relative;  
+            gap: 1.8rem; 
+            overflow: hidden;
+
+            @include respond(tab-port) {
+                grid-row: 2 / 3;
+                grid-column: 1 / 3;
+            }
+
+            @include respond(phone) {
+                grid-row: 2 / 3;
+                grid-column: 1 / 5;
+            }
+
+        }
+
+        &--purple {
+            background: #c63567 linear-gradient(270deg, rgba(255, 255, 255, 0.0001) 2%, rgba(0, 0, 0, 0.5) 90.6%);
+            grid-row: 1 / 2;
+            grid-column: 4 / -1;
+            border-radius: 2rem;
+            position: relative;
+            overflow: hidden;
+
+            @include respond(tab-port) {
+                grid-row: 2 / 3;
+                grid-column: 3 / 5;
+            }
+            @include respond(phone) {
+                grid-row: 3 / 4;
+                grid-column: 1 / 5;
+            }
+        }
+
+        &--dark-blue {
+            background: #303885 linear-gradient(270deg, rgba(255, 255, 255, 0.0001) 2%, rgba(0, 0, 0, 0.5) 90.6%);
+            grid-row: 2 / 4;
+            grid-column: 1 / 3;
+            border-radius: 3rem;
+            position: relative;
+
+            @include respond(tab-port) {
+                grid-row: 3 / 5;
+                grid-column: 1 / 5;
+            }
+            @include respond(phone) {
+                grid-row: 4 / 6;
+                grid-column: 1 / 5;
+            }
+        }
+
+        &--red {
+            background: #e5483b linear-gradient(270deg, #ffffff00 2%, rgba(0, 0, 0, 0.5) 90.6%);
+            grid-row: 2 / -1;
+            grid-column: 3 / -1;
+            border-radius: 4rem;
+            position: relative;
+
+            @include respond(tab-port) {
+                grid-row: 5 / 8;
+                grid-column: 1 / 5;
+            }
+            @include respond(phone) {
+                grid-row: 6 / 9;
+                grid-column: 1 / 5;
+            }
+        }
+
+        &--blue {
+            background: #14A8B9;
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+            border-radius: 2rem;
+            position: relative;
+            overflow: hidden;
+
+            @include respond(tab-port) {
+                grid-row: 8 / 9;
+                grid-column: 1 / 3;
+            }
+            @include respond(phone) {
+                grid-row: 9 / 10;
+                grid-column: 1 / 5;
+            }
+        }
+
+        &--green {
+            background: #2AA845;
+            grid-row: 4 / 5 ;
+            grid-column: 2 / 3;
+            border-radius: 2rem;
+            position: relative;
+            overflow: hidden;
+
+            @include respond(tab-port) {
+                grid-row: 8 / 9;
+                grid-column: 3 / 5;
+            }
+            @include respond(phone) {
+                grid-row: 10 / 11;
+                grid-column: 1 / 5;
+            }
+        }
+  }
+
+  &__awards-img{
+
+    @include position;
+    
+    img {
+        @include respond(tab-land) {
+            width: 12rem;
+            height: auto;
+            
+        }
+    }
+    
+    }
+
+    &__awards-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.8rem;
+        padding-left: 14.3rem;
+        
+        @include respond(tab-land) {
+            padding-left: 10rem;
+        }
+
+        @include respond(tab-port) {
+            padding-left: 14rem;
+        }
+        
+        a {
+            @include regular-size;
+            color: #ffffff;
+        }
+
+    }
+
+    &__animation-img {
+        @include position;
+        
+        img {
+            @include respond(tab-land) {
+                width: 12rem;
+                
+            }
+        }
+
+    }
+
+    &__animation-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-left: 14.3rem;
+
+        @include respond(tab-land) {
+            padding-left: 10rem;
+        }
+
+        @include respond(tab-port) {
+            padding-left: 14rem;
+        }
+
+        a {
+            @include regular-size;
+            color: #ffffff;
+        }
+ 
+    }
+
+    &__action-img {
+        bottom: -0.8rem;
+        left: 0;
+        position: absolute;
+
+        img {
+            @include respond(tab-land) {
+                width: 25rem;
+            }
+
+            @include respond(phone) {
+                width: 15rem;
+            }
+        }
+
+ 
+    }
+
+    &__action-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-left: 33rem;
+
+        @include respond(tab-land) {
+            padding-left: 23rem;
+        }
+
+        @include respond(tab-port) {
+            padding-left: 33rem;
+        }
+        @include respond(phone) {
+            padding-left: 13rem;
+            
+        }
+        
+
+        a {
+            @include bold-size;
+            color: #ffffff;
+
+            @include respond(phone) {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+
+
+        button {
+          border: 1px solid #ffffff;
+          padding: 1rem 7.4rem;
+          background-color: #303885;
+          color: #ffffff;
+          @include default-text;
+          text-align: center;
+          margin-top: 2.1rem;
+
+          @include respond(phone) {
+            padding: 1rem 4rem;
+
+        }
+        }
+
+    }
+
+    &__heroes-img {
+        bottom: -0.8rem;
+        left: 0;
+        position: absolute;
+        img {
+            @include respond(tab-land) {
+                width: 23rem;            
+            }
+
+            @include respond(phone) {
+                width: 14rem;
+            }
+        }
+       
+    }
+
+    &__heroes-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
+        padding-left: 31.7rem;
+
+        @include respond(tab-land) {
+            padding-left: 22.3rem
+        }
+
+        @include respond(tab-port) {
+            padding-left: 30rem;
+        }
+        @include respond(phone) {
+            padding-left: 15rem;
+        }
+        
+        a {
+            @include bold-size;
+            color: #ffffff;
+
+            @include respond(phone) {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+
+        button {
+            border: 1px solid #ffffff;
+            padding: 1rem 8.1rem;
+            background-color: #c5453a;
+            color: #ffffff;
+            @include default-text;
+            text-align: center;
+            margin-top: 2.1rem;
+
+            @include respond(phone) {
+                padding: 1rem 3rem;
+            }
+          }
+
+    }
+
+    &__dram-img {
+        @include position;
+
+        img {
+            @include respond(tab-land) {
+                width: 12rem;
+                
+            }
+        }
+
+    }
+
+    &__dram-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        padding-left: 14.3rem;
+
+        @include respond(tab-land) {
+            padding-left: 10rem;
+        }
+        @include respond(tab-port) {
+            padding-left: 14rem;
+        }
+
+        a {
+            @include medium-size;
+            color: #ffffff;
+        }
+
+    }
+
+    &__commedy-img {
+        @include position;
+
+        img {
+            @include respond(tab-land) {
+                width: 12rem;
+                height: auto;
+                
+            }
+        }
+    }
+
+    &__commedy-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
+        padding-left: 14.3rem;
+
+        @include respond(tab-land) {
+            padding-left: 10rem;
+        }
+        @include respond(tab-port) {
+            padding-left: 14rem;
+        }
+
+        a {
+            @include medium-size;
+            color: #ffffff;
+        }
+
+    }
+
+    &__movie-quantity {
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: #ffffff;
+    }
+}
